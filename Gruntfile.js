@@ -24,6 +24,14 @@ module.exports = function(grunt){
 		    }
 		},
 
+		uglify: {
+		    build: {
+		        files: {
+		            'build/js/base.min.js': ['assets/js/base.js']
+		        }
+		    }
+		},
+
 		cssc: {
 		    build: {
 		        options: {
@@ -56,6 +64,10 @@ module.exports = function(grunt){
 		    html: {
 		        files: ['index.html'],
 		        tasks: ['htmlhint']
+		    },
+		    js: {
+		        files: ['assets/js/base.js'],
+		        tasks: ['uglify']
 		    },
 		    css: {
 		        files: ['assets/sass/master.scss'],
