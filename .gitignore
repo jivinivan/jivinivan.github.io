@@ -2,6 +2,7 @@
 .AppleDouble
 .LSOverride
 .sass-cache
+node_modules
 
 # Icon must ends with two \r.
 Icon
