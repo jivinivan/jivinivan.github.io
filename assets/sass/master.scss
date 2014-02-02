@@ -195,10 +195,10 @@ a:hover {
     height:100%;
     bottom:0;
     top:0;
-    background: url(../../assets/img/fade.png) no-repeat top center fixed; 
+    background: url(../../assets/img/f.png) no-repeat top center fixed; 
     @include vendorize(background-size, cover);
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../assets/img/fade.png', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../assets/img/fade.png', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../assets/img/f.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../assets/img/f.png', sizingMethod='scale')";
 
     @media (max-width: 700px) {
         background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.59) 59%, rgba(0,0,0,1) 100%); /* FF3.6+ */
