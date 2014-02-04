@@ -13,6 +13,7 @@
   zoom: 1;
 }
 
+
 $vendors: "-webkit-" "-moz-" "-o-" "";
 
 @mixin vendorize($property, $values...) {
@@ -174,6 +175,7 @@ a:hover {
     left:75px;
     max-width:400px;
     width:55%;
+    @include vendorize(box-sizing,border-box);
 
     @media (max-width: 800px) {
         bottom:65px;
@@ -182,10 +184,9 @@ a:hover {
 
     @media (max-width: 700px) {
         bottom:0;
-        max-width:100%;
+        max-width:450px;
         width:100%;
         left:0;
-        @include vendorize(box-sizing,border-box);
         padding:30px 30px 5px;
     }
 }
