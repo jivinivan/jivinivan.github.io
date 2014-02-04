@@ -40,11 +40,11 @@ $vendors: "-webkit-" "-moz-" "-o-" "";
 
 @mixin fade-down-in($vendor: "") {
   0% {
-    opacity: 0;
+    @include opacity(0);
     #{$vendor}transform: translateY(-20px);
   }
   100% {
-    opacity: 1;
+    @include opacity(1);
     #{$vendor}transform: translateY(0);
   }
 }
@@ -71,10 +71,10 @@ $vendors: "-webkit-" "-moz-" "-o-" "";
 
 @mixin fade-in($vendor: "") {
   0% {
-    opacity: 0;
+    @include opacity(0);
   }
   100% {
-    opacity: 1;
+    @include opacity(1);
   }
 }
 

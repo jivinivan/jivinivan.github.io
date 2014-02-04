@@ -27,7 +27,7 @@ module.exports = function(grunt){
 		uglify: {
 		    build: {
 		        files: {
-		            'build/js/base.min.js': ['assets/js/base.js']
+		            'build/js/base.min.js': ['assets/js/modernizer.js','assets/js/base.js']
 		        }
 		    }
 		},
