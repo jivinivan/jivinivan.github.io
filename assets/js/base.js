@@ -1,13 +1,21 @@
-window.addEventListener('load', function(){
 
-	var bio = document.getElementsByClassName('bio');
-	bio[0].setAttribute('class', 'bio animated fade-down-in');
+$(document).ready(function(){
+	if($("html").hasClass('csstransitions')){
+		$(".bio").addClass('animated fade-down-in');
+	}else{
+		$(".bio").addClass('hidden');
+		$(".bio").fadeIn();
+	}
 
 	var img = new Image();
 	img.style.display='none';
 	img.src = 'assets/img/is.jpg';
 	img.onload = function() {
-		var photo = document.getElementsByClassName('photo');
-		photo[0].setAttribute('class', 'photo animated fade-in');
+		if($("html").hasClass('csstransitions')){
+			$(".photo").addClass('animated fade-in');
+		}else{
+			$(".photo").addClass('hidden');
+			$(".photo").fadeIn();
+		}
 	};
 });

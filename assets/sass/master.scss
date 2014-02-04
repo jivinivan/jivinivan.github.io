@@ -231,3 +231,8 @@ a:hover {
 
     }
 }
+
+.hidden {
+  @include opacity(1);
+  display:none;
+}
